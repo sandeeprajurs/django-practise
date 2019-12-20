@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <ul>
+        {% for obj in object %}
+            <li>{{ obj.title }}</li>
+            <li>{{ obj.content }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
